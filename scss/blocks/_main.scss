@@ -1,0 +1,216 @@
+.main {
+}
+// section advantage 
+.advantage {
+    background: url(../../img/background/advantage/advantage_bg_right.png) top right/auto no-repeat, url(../../img/background/advantage/advantage_bg_left.png) top left/auto no-repeat;
+    padding-bottom: 180px;
+
+		&__container {
+		}
+
+		&__title {
+		}
+
+		&__cards {
+            display: flex;
+            justify-content: space-between;
+            gap: 100px;
+		}
+
+		&__card {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            gap: 24px;
+		}
+
+		&__card-image {
+            
+		}
+
+		&__card-title {
+		}
+
+		&__card-text {
+            text-align: center;
+		}
+}
+
+// section menu 
+.menu {
+    margin-bottom: 180px;
+    &__container {
+    }
+
+    &__title {
+    }
+
+    &__cards {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        gap: 24px;
+        position: relative;
+        &::before{
+            content: '';
+            display: block;
+            width: 50%;
+            height: 50%;
+            top: 50%;
+            left: 50%;
+            position: absolute;
+            border-radius: 870px;
+            transform: translate(-50%, -50%);
+            filter: blur(150px);
+            background: #42260B;
+        }
+    }
+
+    &__card {
+        display: flex;
+        flex-direction: column;
+        padding: 17px 30px 31px ;
+        border: 1px solid #353535;
+        border-radius: 16px;
+        background: #211A16;
+        position: relative;
+        z-index: 2;
+    }
+
+    &__card-image {
+        margin-bottom: 2px;
+        align-self: center;
+        img{
+            width: 100%;
+        }
+    }
+
+    &__card-name {
+        font-size: 24px;
+        margin-bottom: 24px;
+
+    }
+
+    &__card-text {
+        margin-bottom: 24px;
+    }
+
+    &__card-order {
+        display: flex;
+        justify-content: space-between;
+    }
+
+    &__card-feater {
+        display: flex;
+        flex-direction: column;
+    }
+
+    &__card-price {
+        font-size: 32px;
+        margin-bottom: 8px;
+    }
+
+    &__card-weight {
+        font-weight: 300;
+        font-size: 16px;
+        color: #757575;
+    }
+
+    &__card-button {
+        padding-right: 69px;
+        
+        
+    }
+}
+.label {
+    position: relative;
+    ::after{
+        content: '';
+        position: absolute;
+        top: 50%;
+        right: 35px;
+        transform: translateY(-50%);
+        display: block;
+        width: 24px;
+        height: 24px;
+        background: url(../../img/icons/menu_cart.svg) center/ cover no-repeat;
+    }
+}
+
+// section form 
+.form {
+    background: url(../../img/background/form/form_bg_left.png) top left 25%/contain no-repeat, url(../../img/background/form/form_bg_right.png) top right/ contain no-repeat, url(../../img/background/form/form_bg_fire.png) top right/ contain no-repeat;
+    margin-bottom: 180px;
+    &__container {
+        max-width: 1043px;
+    }
+
+    &__card {
+        display: flex;
+        align-items: center;
+    }
+
+    &__card-banner {
+        img{
+            width: 100%;
+        }
+        
+    }
+
+    &__card-order {
+        border: 1px solid #353535;
+        border-radius: 16px;
+        padding: 60px 40px;
+        background: #211A16;
+        flex: 0 1 50%;
+    }
+
+    &__card-title {
+        text-align: center;
+        font-size: 24px;
+        margin-bottom: 40px;
+    }
+
+    &__card-wrapper {
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
+        input{
+            border-radius: 8px;
+            display: block;
+            width: 100%;
+            padding: 0 10px;
+            height: 62px;
+            border: 1px solid #DA8023;
+            background: inherit;
+            transition: all 0.6s ease;
+            &:focus{
+                border: 1px solid #ff8307;
+                box-shadow: 2px 2px 2px #ff8307, -2px -2px 2px #ff8307,
+                -2px 2px 2px #ff8307, 2px -2px 2px #ff8307;
+                outline: none;
+            }
+        }
+    }
+
+    &__card-number {
+    }
+
+    &__card-input {
+    }
+
+    &__card-name {
+    }
+
+    &__card-tel {
+    }
+
+    &__card-button {
+    }
+}
+
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+    /* display: none; <- Crashes Chrome on hover */
+    -webkit-appearance: none;
+    margin: 0; /* <-- Apparently some margin are still there even though it's hidden */
+}
